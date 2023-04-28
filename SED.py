@@ -69,8 +69,6 @@ class Station():
             
 		def commands(self):
 			
-			
-			
 			bot.message_loop(handle)
 			
 			while True:

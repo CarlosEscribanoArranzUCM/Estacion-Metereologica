@@ -89,13 +89,13 @@ void loop() {
 
 void serialEvent() {
   
-  while (Serial.available()) {//Mientras tengamos caracteres disponibles en el buffer
-    char inChar = (char)Serial.read();//Leemos el siguiente caracter
-    if (inChar == '\n') {//Si el caracter recibido corresponde a un salto de línea
-      stringComplete = true;//Levantamos la bandera 
+  while (Serial.available()) { //Mientras tengamos caracteres disponibles en el buffer
+    char inChar = (char)Serial.read(); //Leemos el siguiente caracter
+    if (inChar == '\n') { //Si el caracter recibido corresponde a un salto de línea
+      stringComplete = true; //Levantamos la bandera 
     }
-    else{//Si el caracter recibido no corresponde a un salto de línea
-      inputString += inChar;//Agregamos el caracter a la cadena 
+    else{ //Si el caracter recibido no corresponde a un salto de línea
+      inputString += inChar; //Agregamos el caracter a la cadena 
     }
   }
 }

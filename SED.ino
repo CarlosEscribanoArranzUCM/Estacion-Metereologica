@@ -3,15 +3,9 @@
 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 
 String inputString = "";      // Cadena para guardar el comando recibido
-bool stringComplete = false;  // Bandera boleana que nos indica cuando el comando fue recibido y podemos compararlo con los comandos válidos
+bool stringComplete = false;  // Bool que indica cuando el comando fue recibido 
+							  //y podemos compararlo con los comandos válidos
 int value;				  // Store value from photoresistor (0-1023)
-
-// Connect pin 1 (on the left) of the sensor to +5V
-// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
-// to 3.3V instead of 5V!
-// Connect pin 2 of the sensor to whatever your DHTPIN is
-// Connect pin 4 (on the right) of the sensor to GROUND
-// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
 
 const int DHTPin = 5;     // what digital pin we're connected to
 

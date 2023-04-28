@@ -9,9 +9,9 @@ import Adafruit_IO
 from Adafruit_IO import Client
 
 ser = serial.Serial("/dev/ttyACM0", baudrate=9600)#Modificar el puerto serie de ser necesarioser = serial.Serial("/dev/ttyACM0", baudrate=9600)#Modificar el puerto serie de ser necesario
-bot= telepot.Bot('6202600533:AAECtlBNcMdXKC0Xw8uu4fIqG1-Jwsjox50')
+bot= telepot.Bot('Telegram_Bot_Token')
 
-aoi = Client('Puppango','aio_diIF265GloMVnhK53wwUEgJJGOPl')
+aoi = Client('Adafruit_user','Adafruit_key')
 feeds_temperature = aoi.feeds('temperature')
 feeds_humidity = aoi.feeds('humidity')
 feeds_brightness = aoi.feeds('brightness')

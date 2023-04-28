@@ -5,7 +5,7 @@
 String inputString = "";      // Cadena para guardar el comando recibido
 bool stringComplete = false;  // Bool que indica cuando el comando fue recibido 
 			      //y podemos compararlo con los comandos válidos
-int value;				  // Store value from photoresistor (0-1023)
+int value;		      // Store value from photoresistor (0-1023)
 
 const int DHTPin = 5;     // what digital pin we're connected to
 
